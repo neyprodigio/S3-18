@@ -29,7 +29,7 @@ function lista () {
 
     let metade = total / 2;
     let metadeMaisVinho = metade + totalVinho;
-    let metadeMenosVinho = metade - vinho;
+    let metadeMenosVinho = metade - totalVinho;
     
     if ( total %2 == 0 ) {
 
