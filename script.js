@@ -18,7 +18,7 @@
 
     let feijao = parseFloat(prompt("Digite o valor do Feijão: "));
     let quantidadeFeijao = parseInt(prompt("Quantas unidades?"));
-    totalFeijao = feijao * quantidadeFeijao;
+    let totalFeijao = feijao * quantidadeFeijao;
 
     let vinho = parseFloat(prompt("Digite o valor do vinho"));
     let quantidadeVinho = parseInt(prompt("Quantas unidades?"));
@@ -27,14 +27,13 @@
     let total = totalRefri + totalMacarrao + totalErvilha + totalArroz + totalFeijao + totalVinho;
 
     let metade = total / 2;
-    let metadeMaisVinho = metade + totalVinho;
-    let metadeMenosVinho = metade - totalVinho;
+    let totalSemVinho = totalRefri + totalMacarrao + totalErvilha + totalArroz + totalFeijao;
     
     if ( total %2 == 0 ) {
 
         alert (`Valor total a ser pago: R$ ${total}\n
-        Valor a ser pago por mim: R$ ${metadeMenosVinho}\n
-        Valor a ser pago por meu amigo: R$ ${metadeMaisVinho}`)
+        Valor a ser pago por mim: R$ ${totalSemVinho/2}\n
+        Valor a ser pago por meu amigo: R$ ${totalSemVinho/2 + totalVinho}`)
 
 
     } else {
